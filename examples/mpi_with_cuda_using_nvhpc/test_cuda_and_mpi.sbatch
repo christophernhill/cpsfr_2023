@@ -4,6 +4,15 @@
 #SBATCH -n 2
 #SBATCH --gres=gpu:2
 #SBATCH --time=00:02:00
+#
+# Basic slurm job that runs in CPSFR 2023 nodes and checks GPU aware MPI is working.
+#
+#   To submit through Slurm use:
+#
+#   $ sbatch test_cuda_and_mpi.sbatch
+#  
+#   in terminal.
+
 
 module load nvhpc/2023_233/nvhpc/23.3
 culibdir=$NVHPC_ROOT/cuda/lib64
