@@ -7,6 +7,7 @@
 #
 # Basic slurm job that runs in CPSFR 2023 nodes and checks GPU aware MPI is working.
 #
+#
 #   To submit through Slurm use:
 #
 #   $ sbatch test_cuda_and_mpi.sbatch
