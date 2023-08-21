@@ -89,4 +89,6 @@ EOFA
 
 mpicc test.c -I${cuincdir} -L${culibdir} -lcudart
 
+export LD_LIBRARY_PATH=${culibdir}:${LD_LIBRARY_PATH}
+
 mpiexec --mca btl_openib_warn_no_device_params_found 0 -n 2 ./a.out 
